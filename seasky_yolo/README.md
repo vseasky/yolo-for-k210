@@ -1,6 +1,6 @@
 # SEASKY-K210-YOLO-DEMO
 
-### **@版权所有->SEASKY**
+### **@版权所有->刘威**
 
 ### **LICENSE:** **MIT License**
 

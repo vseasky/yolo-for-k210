@@ -1,6 +1,6 @@
 ## **模型训练代码完全来源于[https://github.com/zhen8838/K210_Yolo_framework](https://github.com/zhen8838/K210_Yolo_framework)，为了能在 win 上训练模型，你需要简单修改它的代码，我已经完成修改可以在 win 上运行**
 
-### **@版权所有->SEASKY**
+### **@版权所有->刘威**
 
 ### **LICENSE:** **MIT License**
 

@@ -17,7 +17,7 @@
 5. Support model weight pruning
 6. Portable model to kendryte K210 chip
 
-## VOC 数据集训练 ###开发环境
+## VOC 数据集训练-开发环境
 
 原作者在 ubuntu 18.04 - Python 3.7.1 中进行测试 ,
 本人尝试可以在 windows 正常训练,你需要安装 requirements.txt 中的内容
@@ -82,11 +82,13 @@
 | tiny_yolo     |            | [google drive](https://drive.google.com/open?id=1M1ZUAFJ93WzDaHOtaa8MX015HdoE85LM) | [weiyun](https://share.weiyun.com/5413QWx) |
 | yolo          |            | [google drive](https://drive.google.com/open?id=17eGV6DCaFQhVoxOuTUiwi7-v22DAwbXf) | [weiyun](https://share.weiyun.com/55g6zHl) |
 
+
+
 注：mobilev 不是原创的，原作者有修改它适合 K210
 
 ## Train
 
-使用 Mobileenet 时，需要指定 DEPTHMUL 参数。你不需要布景 DEPTHMUL 使用 tiny yolo 或 yolo.
+使用 Mobileenet 时，需要指定 DEPTHMUL 参数。 使用 tiny yolo 或 yolo你不需要设定DEPTHMUL.
 
 1.  Set MODEL and DEPTHMUL to start training:
 
@@ -134,7 +136,9 @@
 
 ## 转换 Kmodel
 
-Please refer nncase v0.1.0-RC5 example
+Please refer <a href="https://github.com/kendryte/nncase/tree/v0.1.0-rc5">`nncase v0.1.0-RC5 example`</a>
+
+
 
     ncc mobile_yolo.tflite mobile_yolo.kmodel -i tflite -o k210model --dataset train_images
 

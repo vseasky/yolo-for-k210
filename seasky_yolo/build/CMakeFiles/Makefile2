@@ -130,8 +130,8 @@ lib/nncase/clean: lib/nncase/CMakeFiles/nncase.dir/clean
 # Target rules for target CMakeFiles/hello_world.dir
 
 # All Build rule for target.
-CMakeFiles/hello_world.dir/all: lib/CMakeFiles/kendryte.dir/all
 CMakeFiles/hello_world.dir/all: lib/nncase/CMakeFiles/nncase.dir/all
+CMakeFiles/hello_world.dir/all: lib/CMakeFiles/kendryte.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_world.dir\build.make CMakeFiles/hello_world.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_world.dir\build.make CMakeFiles/hello_world.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\github_ide\Yolo-for-k210\seasky_yolo\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target hello_world"

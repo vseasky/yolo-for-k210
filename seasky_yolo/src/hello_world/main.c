@@ -48,7 +48,7 @@ static uint16_t lcd_gram[320 * 224] __attribute__((aligned(32)));
 #define LOAD_FLASH_ADDR 0xA00000 //存放地址
 uint8_t *model_data;
 #else
-INCBIN(model, "mx_yolo.kmodel");
+INCBIN(model, "mobile_yolo.kmodel");
 #endif
 
 kpu_model_context_t task;

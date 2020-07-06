@@ -1,4 +1,6 @@
-## **模型训练代码完全来源于[https://github.com/zhen8838/K210_Yolo_framework](https://github.com/zhen8838/K210_Yolo_framework)，为了能在 win 上训练模型，你需要简单修改它的代码，我已经完成修改可以在 win 上运行**
+## **模型训练代码完全来源于<a href="https://github.com/zhen8838/K210_Yolo_framework">K210_Yolo_framework</a>，为了能在 win 上训练模型，你需要简单修改它的代码，我已经完成修改可以在 win 上运行**
+
+## 你可以直接使用我修改后的代码<a href="https://github.com/SEASKY-Master/Yolo-for-k210">Yolo-for-k210</a>,或者你尝试使用原来的代码自行修改
 
 ### **@版权所有->刘威**
 
@@ -82,13 +84,11 @@
 | tiny_yolo     |            | [google drive](https://drive.google.com/open?id=1M1ZUAFJ93WzDaHOtaa8MX015HdoE85LM) | [weiyun](https://share.weiyun.com/5413QWx) |
 | yolo          |            | [google drive](https://drive.google.com/open?id=17eGV6DCaFQhVoxOuTUiwi7-v22DAwbXf) | [weiyun](https://share.weiyun.com/55g6zHl) |
 
-
-
 注：mobilev 不是原创的，原作者有修改它适合 K210
 
 ## Train
 
-使用 Mobileenet 时，需要指定 DEPTHMUL 参数。 使用 tiny yolo 或 yolo你不需要设定DEPTHMUL.
+使用 Mobileenet 时，需要指定 DEPTHMUL 参数。 使用 tiny yolo 或 yolo 你不需要设定 DEPTHMUL.
 
 1.  Set MODEL and DEPTHMUL to start training:
 
@@ -137,8 +137,6 @@
 ## 转换 Kmodel
 
 Please refer <a href="https://github.com/kendryte/nncase/tree/v0.1.0-rc5">`nncase v0.1.0-RC5 example`</a>
-
-
 
     ncc mobile_yolo.tflite mobile_yolo.kmodel -i tflite -o k210model --dataset train_images
 

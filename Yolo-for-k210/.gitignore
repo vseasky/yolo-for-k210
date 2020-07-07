@@ -8,5 +8,5 @@ data/*
 *.txt
 !requirements.txt
 test
-Train_Image/VOCdevkit
-Train_Image/My-Image
+Train_Image/*
+!Train_Image/数据集结构.png

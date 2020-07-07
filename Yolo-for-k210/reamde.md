@@ -24,7 +24,7 @@
 原作者在 ubuntu 18.04 - Python 3.7.1 中进行测试 ,
 本人尝试可以在 windows 正常训练,你需要安装 requirements.txt 中的内容
 优先安装 `tensorflow-gpu==1.15.0`,如果你的电脑不支持 GPU 版本，请安装 `tensorflow==1.15.0`
-<img src="tensorflow.jpg"/>
+<img src="readme_image/tensorflow.jpg"/>
 请在 `tensorflow` 环境搭建完成后继续向下操作，tensorflow 环境搭建参见`百度`
 
 然后使用`pip install -r requirements.txt`安装其他工具

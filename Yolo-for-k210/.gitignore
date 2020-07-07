@@ -1,0 +1,12 @@
+log
+data/*
+!data/dog.jpg
+!data/people.jpg
+*.pb
+*.tflite
+*.kmodel
+*.txt
+!requirements.txt
+test
+Train_Image/VOCdevkit
+Train_Image/My-Image

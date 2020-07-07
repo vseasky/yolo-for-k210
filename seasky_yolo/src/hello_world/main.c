@@ -454,6 +454,7 @@ int main(void)
         /* draw boxs */
         region_layer_draw_boxes(&detect_rl0, drawboxes);
         region_layer_draw_boxes(&detect_rl1, drawboxes);
-        // region_layer_write_to_uart(&detect_rl, send_data);
+        // region_layer_write_to_uart(&detect_rl0, send_data);
+        // region_layer_write_to_uart(&detect_rl1, send_data);
     }
 }

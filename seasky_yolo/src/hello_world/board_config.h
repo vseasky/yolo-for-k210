@@ -2,7 +2,7 @@
 #define _BOARD_CONFIG_
 
 #define OV5640 0
-#define OV2640 1
+#define OV2640 0
 
 #define BOARD_KD233 0
 #define BOARD_LICHEEDAN 1

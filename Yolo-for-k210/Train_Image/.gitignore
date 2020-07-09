@@ -1,5 +1,5 @@
 MyImage/*
-MyImage/ImageSets
+!MyImage/ImageSets/
 !datamaking.py
 !datamakingv2.py
 !数据集结构.png

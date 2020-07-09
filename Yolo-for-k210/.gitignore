@@ -6,6 +6,7 @@ Train_Image/*
 *.tflite
 *.kmodel
 *.txt
+!百度网盘.txt
 !requirements.txt
 !data/dog.jpg
 !data/people.jpg

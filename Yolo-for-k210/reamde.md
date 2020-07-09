@@ -34,9 +34,27 @@
 首次使用（确保你获取到了数据集）：
 
     准备数据集
+
+数据集须存放在/Train_Image/MyImage
+  <img src="Train_Image/数据集结构.png">
+然后使用python生成需要的文件
+
+datamaking.py
+
+    仅根据Annotations和JPEGImages目录
+    生成pscalvoc.txt、train.txt、val.txt、test.txt
+    同时会删除多余或不配对的 .xml .jpg 运行时间较长
+    数据按7：2：1分配
+datamakingv2.py
+
+    仅根据Annotations目录下文件的.xml文件生成需要的pscalvoc.txt、train.txt、val.txt、test.txt
+    运行时间较短，适用于确认数据集一一对应的情况
+
+生成label
+
     python voc_label.py
-    cat  VOCdevkit_train.txt VOCdevkit_val.txt> train.txt   Linux使用此命令
-    type VOCdevkit_train.txt VOCdevkit_val.txt> train.txt	  windowns使用此命令
+    cat  MyImage_train.txt MyImage_val.txt> train.txt   Linux使用此命令
+    type MyImage_train.txt MyImage_val.txt> train.txt	  windowns使用此命令
 
 注意：
 
@@ -131,7 +149,7 @@
 
 Please refer <a href="https://github.com/kendryte/nncase/tree/v0.1.0-rc5">`nncase v0.1.0-RC5 example`</a>
 
-    ncc mobile_yolo.tflite mobile_yolo.kmodel -i tflite -o k210model --dataset train_images
+    ncc mobile_yolo.tflite mobile_yolo.kmodel -i tflite -o k210model --dataset nncase_images
 
 ## 将 Kmodel 部署到 K210
 

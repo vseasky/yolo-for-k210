@@ -30,12 +30,14 @@
 3. 从<a href="https://github.com/kendryte/kendryte-gnu-toolchain/releases">Kendryte Github</a>下载 Windows 版本工具链。 打开网页后展开 Assets 可看到下载链接。
    <img src="images/seasky7.jpg">
 
-4) 配置环境变量
+4. 配置环境变量
    <img src="images/seasky8.jpg">
 
-5) 重新打开一个 cmd 窗口，输入 `riscv64-unknown-elf-gcc –v`命令，看到如下信息说明编译器设置正确。
+5. 重新打开一个 cmd 窗口，输入 `riscv64-unknown-elf-gcc –v`命令，看到如下信息说明编译器设置正确。
    <img src="images/seasky9.jpg">
    到此开发环境搭建完成
+
+6. 同时你还需要安装win下cmake依赖的编译工具、否则你将无法使用make，因此你还需要安装`MingW`，安装过程自己百度一下
 
 ## 源码编译（win）
 

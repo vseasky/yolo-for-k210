@@ -18,5 +18,5 @@ def rename(path , newname):   #对文件重命名
         Newdir = os.path.join(path , newname + filetype) % m  #这里由于filetype是一个列表，因此不能用Newdir=path+'face%05d'+filetype!
         m += 1
         os.rename(Olddir , Newdir)
- 
+#图片批量重命名
 rename('E:/github_ide/Yolo-for-k210/train_image/JPEGImages/' ,'2020_'+'%06d')

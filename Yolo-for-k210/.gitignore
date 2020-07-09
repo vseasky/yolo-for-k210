@@ -1,11 +1,11 @@
 log
+test
 data/*
+Train_Image/*
 *.pb
 *.tflite
 *.kmodel
 *.txt
-test
-Train_Image/*
 !requirements.txt
 !data/dog.jpg
 !data/people.jpg

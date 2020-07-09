@@ -19,4 +19,4 @@ def rename(path , newname):   #对文件重命名
         m += 1
         os.rename(Olddir , Newdir)
  
-rename('E:/github_ide/Yolo-for-k210/train_image/JPEGImages/' , '%06d')
+rename('E:/github_ide/Yolo-for-k210/train_image/JPEGImages/' ,'2020_'+'%06d')

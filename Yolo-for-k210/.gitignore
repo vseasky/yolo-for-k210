@@ -9,4 +9,6 @@ data/*
 !requirements.txt
 test
 Train_Image/*
+!Train_Image/datamaking.py
+!Train_Image/datamakingv2.py
 !Train_Image/数据集结构.png

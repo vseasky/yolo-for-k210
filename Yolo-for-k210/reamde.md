@@ -33,16 +33,10 @@
 
 首次使用（确保你获取到了数据集）：
 
-    wget https://pjreddie.com/media/files/VOCtrainval_11-May-2012.tar
-    wget https://pjreddie.com/media/files/VOCtrainval_06-Nov-2007.tar
-    wget https://pjreddie.com/media/files/VOCtest_06-Nov-2007.tar
-    tar xf VOCtrainval_11-May-2012.tar
-    tar xf VOCtrainval_06-Nov-2007.tar
-    tar xf VOCtest_06-Nov-2007.tar
-    wget https://pjreddie.com/media/files/voc_label.py
+    准备数据集
     python voc_label.py
-    cat 2007_train.txt 2007_val.txt 2012_*.txt > train.txt    Linux使用此命令
-    type 2007_train.txt 2007_val.txt 2012_*.txt > train.txt	  windowns使用此命令
+    cat  VOCdevkit_train.txt VOCdevkit_val.txt> train.txt   Linux使用此命令
+    type VOCdevkit_train.txt VOCdevkit_val.txt> train.txt	  windowns使用此命令
 
 注意：
 
@@ -58,7 +52,7 @@
 
 加载注释生成 anchors(LOW 和 HIGH 视数据集的分布而定)：
 
-    make anchors DATASET=voc ANCNUM=3
+    make anchors DATASET=voc ANCNUM=3 LOW="0.0 0.0" HIGH="1.0 1.0"
 
 当你成功的时候，你会看到这样以下内容：
 <img src="./readme_image/Figure_1.png"/>
@@ -90,23 +84,22 @@
 
 使用 Mobileenet 时，需要指定 DEPTHMUL 参数。 使用 tiny yolo 或 yolo 你不需要设定 DEPTHMUL.
 
-1.  Set MODEL and DEPTHMUL to start training:
-
+1.  集MODEL和DEPTHMUL开始训练：
         make train MODEL=yolo_mobilev1 DEPTHMUL=0.75 MAXEP=10 ILR=0.001 DATASET=voc CLSNUM=20 IAA=False BATCH=8
 
-2.  Set CKPT to continue training:
+2.  集CKPT继续训练:
 
-        make train MODEL=xxxx DEPTHMUL=xx MAXEP=10 ILR=0.0005 DATASET=voc CLSNUM=20 IAA=False BATCH=16 CKPT=log/xxxxxxxxx/yolo_model.h5
+        make train MODEL=yolo_mobilev1 DEPTHMUL=0.75 MAXEP=10 ILR=0.001 DATASET=voc CLSNUM=20 IAA=False BATCH=8 CKPT=log/xxxxxxxxx/yolo_model.h5
 
-3.  Set IAA to enable data augment:
+3.  集IAA为了增加数据:
 
         make train MODEL=xxxx DEPTHMUL=xx MAXEP=10 ILR=0.0001 DATASET=voc CLSNUM=20 IAA=True BATCH=16 CKPT=log/xxxxxxxxx/yolo_model.h5
 
-4.  Use tensorboard:
+4.  使用 tensorboard:
 
         tensorboard --logdir log
 
-## Inference
+## 推论
 
     make inference MODEL=yolo_mobilev1 DEPTHMUL=0.75 CLSNUM=20 CKPT=log/xxxxxx/yolo_model.h5 IMG=data/people.jpg
 
@@ -122,7 +115,7 @@
 
 更多选项请参见`python3 ./keras_inference.py -h`
 
-## Prune Model
+## 修剪模型
 
     make train MODEL=xxxx MAXEP=1 ILR=0.0003 DATASET=voc CLSNUM=20 BATCH=16 PRUNE=True CKPT=log/xxxxxx/yolo_model.h5 END_EPOCH=1
 

@@ -4,6 +4,7 @@ import os
 from os import listdir, getcwd
 from os.path import join
 os_removepath = 'E:/github_ide/Yolo-for-k210/Yolo-for-k210'
+
 sets=[('MyImage', 'train'), ('MyImage', 'val'), ('MyImage', 'test')]#使用自定义数据集
 #sets=[('VOCdevkit', 'train'), ('VOCdevkit', 'val'), ('VOCdevkit', 'test')]#使用VOCdevkit数据集
 classes = ["aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat", "chair", "cow", "diningtable", "dog", "horse", "motorbike", "person", "pottedplant", "sheep", "sofa", "train", "tvmonitor"]

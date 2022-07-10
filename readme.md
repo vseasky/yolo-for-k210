@@ -31,5 +31,7 @@ v1 v2 两个版本仅格式不同，所有内容都相同
 
 导出的 v2 版本 pdf，解决了换行符问题，可以直接复制
 
-<img src="model.png">
-<img src="seasky-k210.png">
+![](./model.png)
+
+![](./seasky-k210.png)
+

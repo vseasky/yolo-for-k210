@@ -6,7 +6,6 @@ import os
 import shutil
  
 def rename(path , newname):   #对文件重命名
-     
     filelist = os.listdir(path)  #获取文件下的所有文件名
     m = 0
     for files in filelist:

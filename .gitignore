@@ -1,5 +1,4 @@
 log/
-test/
 data/*.*
 !data/input/*.*
 !data/output/*.*
@@ -9,5 +8,7 @@ train-image/*
 *.tflite
 *.kmodel
 *.pyc
+*.txt
 !*.py
 !*.md
+!requirements.txt

@@ -1,39 +1,24 @@
 ```
 train-image
-    ->  VOCdevkit
-        --> Annotations
-          --  000001.xml
-          --  000002.xml
-          --  000003.xml
-          --  ...
-        --> ImageSets
-          --> Main
-            --  pscalvoc.txt
-            --  test.txt
-            --  train.txt
-            --  val.txt
-        --> JPEGImages
-          --  000001.jpg
-          --  000002.jpg
-          --  000003.jpg
-          --  ...
-    ->  your_img
-        --> Annotations
-          --  000001.xml
-          --  000002.xml
-          --  000003.xml
-          --  ...
-        --> ImageSets
-          --> Main
-            --  pscalvoc.txt
-            --  test.txt
-            --  train.txt
-            --  val.txt
-        --> JPEGImages
-          --  000001.jpg
-          --  000002.jpg
-          --  000003.jpg
-          --  ...
+  ->  VOCdevkit
+      --> Annotations
+        --  000001.xml
+        --  000002.xml
+        --  000003.xml
+        --  ...
+      --> ImageSets
+        --> Main
+          --  pscalvoc.txt
+          --  test.txt
+          --  train.txt
+          --  val.txt
+      --> JPEGImages
+        --  000001.jpg
+        --  000002.jpg
+        --  000003.jpg
+        --  ...
+  ->  images
+      -->
 ```
 
 ```shell

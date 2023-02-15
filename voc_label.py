@@ -5,13 +5,17 @@ from os import listdir, getcwd
 from os.path import join
 
 
-# os_file_path = 'E:/github_ide/Yolo-for-k210/Yolo-for-k210'
-# os_file_path  = 'E:/github/riscv-k210/ai-pro/yolo-for-k210/yolo-for-k210'
+
 os_file_path =  os.path.dirname(os.path.abspath(__file__))
+
+# Voc数据集
 sets=[('VOCdevkit', 'train'), ('VOCdevkit', 'val'), ('VOCdevkit', 'test')]#使用自定义数据集
-#sets=[('VOCdevkit', 'train'), ('VOCdevkit', 'val'), ('VOCdevkit', 'test')]
 classes = ["aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat", "chair", "cow", "diningtable", "dog", "horse", "motorbike", "person", "pottedplant", "sheep", "sofa", "train", "tvmonitor"]
+
+# 你的自定义数据集
+#sets=[('your_img', 'train'), ('your_img', 'val'), ('your_img', 'test')]
 #classes = ["car","watcher","base","ignore"]
+
 difficulty_set = 1
 
 def convert(size, box):
@@ -36,7 +40,7 @@ def convert_annotation(year, image_id):
     size = root.find('size')
     w = int(size.find('width').text)
     h = int(size.find('height').text)
-    if root.find('object')==None:           #
+    if root.find('object')==None:#
         print("删除以下错误xml文件，请重新生成train.txt val.txt test.txt")
         in_file.close()
         os.remove(os_file_path+'/train-image/%s/Annotations/%s.xml'%(year,image_id)) 

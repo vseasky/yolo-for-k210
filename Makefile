@@ -32,7 +32,7 @@ all:
 	@echo please use \"make train\" or other ...
 
 train:
-	python ./keras_train.py \
+	python3 ./keras_train.py \
 			--train_set ${DATASET} \
 			--class_num ${CLSNUM} \
 			--pre_ckpt ${CKPT} \
@@ -60,10 +60,10 @@ train:
 			--prune_frequency ${FREQUENCY} 
 
 freeze:
-	python ./keras_freeze.py ${CKPT}
+	python3 ./keras_freeze.py ${CKPT}
 			
 inference:
-	python	./keras_inference.py \
+	python3	./keras_inference.py \
 			${CKPT} \
 			${IMG} \
 			--train_set ${DATASET} \
@@ -76,7 +76,7 @@ inference:
 			--output_size ${OUTSIZE}
 
 anchors:
-	python ./make_anchor_list.py \
+	python3 ./make_anchor_list.py \
 			${DATASET} \
 			--max_iters 10 \
 			--is_random True \
@@ -90,4 +90,4 @@ build_kfpkg:
 	cd ~/workspace/kendryte-standalone-sdk-0.5.6/build && make && zip -r kpu_yolov3.kfpkg  flash-list.json kpu_yolov3.bin yolo.kmodel && cd -
 	
 download:
-	python /home/zqh/Documents/kflash.py/kflash.py ~/workspace/kendryte-standalone-sdk-0.5.6/build/kpu_yolov3.kfpkg -B kd233 -p /dev/ttyUSB0 -b 2000000 -t
+	python3 /home/zqh/Documents/kflash.py/kflash.py ~/workspace/kendryte-standalone-sdk-0.5.6/build/kpu_yolov3.kfpkg -B kd233 -p /dev/ttyUSB0 -b 2000000 -t

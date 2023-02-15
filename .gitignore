@@ -1,13 +1,4 @@
-.vscode
-log
-data
-!data/input
-!data/output
+log/*
+data/*
 train-image/
-!train-image/readme.md
-*.pb
-*.tflite
-*.kmodel
-*.pyc
-*.txt
-!requirements.txt
+

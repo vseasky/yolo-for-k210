@@ -1,2 +1,10 @@
-train_image/JPEGImages
-!train_image/cmingm.py
+log
+test
+data/*
+train-image/*
+*.tflite
+*.kmodel
+*.txt
+!*.py
+!*.md
+!requirements.txt

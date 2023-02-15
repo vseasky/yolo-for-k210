@@ -11,7 +11,6 @@ config.gpu_options.allow_growth = True
 sess = tf.Session(config=config)
 keras.backend.set_session(sess)
 
-
 def main(pre_ckpt):
     pre_ckpt = Path(pre_ckpt)
     converter = tf.lite.TFLiteConverter.from_keras_model_file(pre_ckpt)

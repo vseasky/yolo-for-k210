@@ -1,0 +1,82 @@
+absl-py==1.4.0
+astor==0.8.1
+astunparse==1.6.3
+brotlipy==0.7.0
+certifi @ file:///croot/certifi_1671487769961/work/certifi
+cffi @ file:///croot/cffi_1670423208954/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+cloudpickle==2.2.1
+conda==23.1.0
+conda-content-trust @ file:///tmp/abs_5952f1c8-355c-4855-ad2e-538535021ba5h26t22e5/croots/recipe/conda-content-trust_1658126371814/work
+conda-package-handling @ file:///croot/conda-package-handling_1672865015732/work
+conda_package_streaming @ file:///croot/conda-package-streaming_1670508151586/work
+cryptography @ file:///croot/cryptography_1673298753778/work
+cycler==0.11.0
+fonttools==4.38.0
+gast==0.3.3
+google-pasta==0.2.0
+grpcio==1.51.1
+h5py==2.10.0
+idna @ file:///croot/idna_1666125576474/work
+imageio==2.25.1
+imgaug==0.4.0
+Keras==2.3.1
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.4
+matplotlib==3.5.1
+networkx==3.0
+numpy==1.23.5
+nvidia-cublas-cu11==2022.4.8
+nvidia-cublas-cu117==11.10.1.25
+nvidia-cublas-cu12==12.0.2.224
+nvidia-cuda-cupti-cu12==12.0.146
+nvidia-cuda-nvcc-cu12==12.0.140
+nvidia-cuda-runtime-cu11==2022.4.25
+nvidia-cuda-runtime-cu117==11.7.60
+nvidia-cuda-runtime-cu12==12.0.146
+nvidia-cudnn-cu11==8.8.0.121
+nvidia-cufft-cu12==11.0.1.95
+nvidia-curand-cu12==10.3.1.124
+nvidia-cusolver-cu12==11.4.3.1
+nvidia-cusparse-cu12==12.0.1.140
+nvidia-dali-cuda110==1.21.0
+nvidia-dali-nvtf-plugin==1.21.0+nv23.1
+nvidia-horovod==0.26.1+nv23.1
+nvidia-nccl-cu12==2.16.5
+nvidia-nvjitlink-cu12==12.0.140
+nvidia-pyindex==1.0.9
+nvidia-tensorflow==1.15.5+nv23.1
+opencv-python==4.7.0.68
+opt-einsum==3.3.0
+packaging==23.0
+Pillow==9.4.0
+pluggy @ file:///tmp/build/80754af9/pluggy_1648042571233/work
+protobuf==3.20.3
+psutil==5.9.4
+pycosat @ file:///croot/pycosat_1666805502580/work
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing==3.0.9
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305779399/work
+python-dateutil==2.8.2
+PyWavelets==1.4.1
+PyYAML==6.0
+requests @ file:///opt/conda/conda-bld/requests_1657734628632/work
+ruamel.yaml @ file:///croot/ruamel.yaml_1666304550667/work
+ruamel.yaml.clib @ file:///croot/ruamel.yaml.clib_1666302247304/work
+scikit-image==0.19.3
+scipy==1.8.1
+shapely==2.0.1
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+tensorboard==1.15.0
+tensorflow-estimator==1.15.1
+tensorflow-model-optimization==0.1.1
+tensorrt==8.5.3.1
+termcolor==2.2.0
+tifffile==2023.2.3
+toolz @ file:///croot/toolz_1667464077321/work
+tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+urllib3 @ file:///croot/urllib3_1673575502006/work
+wrapt==1.14.1
+zstandard @ file:///opt/conda/conda-bld/zstandard_1663827383994/work

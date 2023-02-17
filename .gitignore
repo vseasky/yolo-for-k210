@@ -12,4 +12,5 @@ train-image/*
 *.txt
 !*.py
 !*.md
+!asset/*
 !requirements.txt

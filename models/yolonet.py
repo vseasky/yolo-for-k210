@@ -35,7 +35,7 @@ def yolo_mobilev1(input_shape: list, anchor_num: int, class_num: int, **kwargs) 
     y2 = compose(
         keras.layers.Concatenate(),
         DarknetConv2D_BN_Leaky(128, (3, 3)),
-        DarknetConv2D(anchor_num * (class_num + 5), (1, 1)))([x2, x1])##？？？？？？？？？？？
+        DarknetConv2D(anchor_num * (class_num + 5), (1, 1)))([x2, x1])
 
     y1_reshape = Reshape((7, 10, anchor_num, 5 + class_num), name='l1')(y1)
     y2_reshape = Reshape((14, 20, anchor_num, 5 + class_num), name='l2')(y2)

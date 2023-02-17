@@ -1,9 +1,9 @@
+keras==2.3.1
+tensorflow_model_optimization==0.1.1
+h5py==2.10.0
+imgaug==0.4.0
+matplotlib==3.5.1
+scikit-image
+opencv-python
+pillow
 termcolor
-scipy
-tensorflow_model_optimization
-opencv_python
-matplotlib
-scikit_image
-numpy
-imgaug
-Pillow

@@ -10,18 +10,12 @@ import sys
 import numpy as np
 
 tf.enable_eager_execution()
-# tf.enable_eager_execution()
-# config = tf.ConfigProto()
-# config.gpu_options.allow_growth = True
-# sess = tf.Session(config=config)
-# keras.backend.set_session(sess)
-# keras.backend.set_learning_phase(0)
-
-config = tf.ConfigProto()  
-config.gpu_options.allow_growth = True 
+config = tf.ConfigProto()
+config.gpu_options.allow_growth = True
 sess = tf.Session(config=config)
 keras.backend.set_session(sess)
-keras.backend.clear_session() #清理session
+keras.backend.set_learning_phase(0)
+
 
 # obj_thresh = 0.7
 # iou_thresh = 0.3
@@ -33,7 +27,6 @@ keras.backend.clear_session() #清理session
 # depth_multiplier = 0.75
 # train_set = 'voc'
 # test_image = 'tmp/bb.jpg'
-
 
 
 def correct_box(box_xy: tf.Tensor, box_wh: tf.Tensor, input_shape: list, image_shape: list) -> tf.Tensor:
@@ -142,9 +135,8 @@ def main(ckpt_weights, image_size, output_size, model_def, class_num, depth_mult
     scores = tf.concat(_scores, axis=0)
 
     """ draw box  """
-    font = ImageFont.truetype(  font='asset/FiraMono-Medium.otf',
-                                size=tf.cast(tf.floor(3e-2 * image_shape[0] + 0.5),
-                                tf.int32).numpy())
+    font = ImageFont.truetype(font='asset/FiraMono-Medium.otf',
+                              size=tf.cast(tf.floor(3e-2 * image_shape[0] + 0.5), tf.int32).numpy())
 
     thickness = (image_shape[0] + image_shape[1]) // 300
 

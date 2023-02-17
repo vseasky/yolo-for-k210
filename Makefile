@@ -90,4 +90,4 @@ build_kfpkg:
 	cd ~/workspace/kendryte-standalone-sdk-0.5.6/build && make && zip -r kpu_yolov3.kfpkg  flash-list.json kpu_yolov3.bin yolo.kmodel && cd -
 	
 download:
-	python3 /home/zqh/Documents/kflash.py/kflash.py ~/workspace/kendryte-standalone-sdk-0.5.6/build/kpu_yolov3.kfpkg -B kd233 -p /dev/ttyUSB0 -b 2000000 -t
+	python /home/zqh/Documents/kflash.py/kflash.py ~/workspace/kendryte-standalone-sdk-0.5.6/build/kpu_yolov3.kfpkg -B kd233 -p /dev/ttyUSB0 -b 2000000 -t

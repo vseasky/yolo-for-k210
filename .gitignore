@@ -1,4 +1,5 @@
 log/
+nncase/*
 data/*.*
 !data/input/*.*
 !data/output/*.*

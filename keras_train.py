@@ -20,7 +20,6 @@ config.gpu_options.allow_growth = True
 sess = tf.Session(config=config)
 keras.backend.set_session(sess)
 
-
 def write_arguments_to_file(args, filename):
     with open(filename, 'w') as f:
         for key, value in vars(args).items():

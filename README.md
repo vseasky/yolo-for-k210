@@ -2,6 +2,11 @@
 
 [vseasky/yolo-for-k210](https://github.com/vseasky/yolo-for-k210)
 
+## 教程
+
+[riscv-k210](https://docs.liuwei.vin/notes/riscv-k210/)
+
+
 ## 环境配置
 
 1. 常规版本

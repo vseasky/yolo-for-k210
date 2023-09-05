@@ -108,12 +108,10 @@ def tile_x(x: np.ndarray, k: int):
     x = np.tile(x, (1, k, 1))
     return x
 
-
 def tile_c(initial_centroids: np.ndarray, m: int):
     c = initial_centroids[np.newaxis, :, :]
     c = np.tile(c, (m, 1, 1))
     return c
-
 
 def build_kmeans_graph(new_x: np.ndarray, new_c: np.ndarray):
     """ build calc kmeans graph

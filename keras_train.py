@@ -110,7 +110,6 @@ def main(args, train_set, class_num, pre_ckpt, model_def,
         print()
         print(INFO, f' Save Model as {str(ckpt)}')
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--train_set', type=str, help='trian file lists', default='voc')
